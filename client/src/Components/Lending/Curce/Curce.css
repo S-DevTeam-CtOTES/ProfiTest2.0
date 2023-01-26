@@ -1,0 +1,58 @@
+.curce {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60px;
+    /* height: 837px; */
+}
+.padding {
+    padding-top: 53px;
+
+}
+.curce-title {
+   margin-left: 50px;
+   font-weight: 700;
+    font-size: 39.4181px;
+    line-height: 110%;
+    color: white;
+}
+
+.curce-block {
+    margin-top: 40px;   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.curce-img-1 {
+    top: -300px;
+    position: absolute;
+    z-index: 1;
+}
+
+.curce-img-2 {
+    position: absolute;
+    z-index: 0;
+    top: -300px;
+    left: 280px;
+}
+
+.curce-btn {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+margin: 60px auto 0 auto;
+text-align: center;
+width: 386px;
+height: 76px;
+background: #FF226D;
+box-shadow: 0px 1.92598px 1.92598px rgba(0, 0, 0, 0.25);
+border-radius: 7.70392px;
+font-weight: 300;
+font-size: 36.9966px;
+line-height: 110%;
+letter-spacing: 0.035em;
+color: #FFFFFF;
+z-index: 2;
+cursor: pointer;
+}

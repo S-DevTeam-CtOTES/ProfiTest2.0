@@ -1,0 +1,60 @@
+/* Google fonts */
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  scroll-behavior: smooth;
+  font-family: var(--font-family); /* fonts */
+  color: var(--text-color);
+  background-color: #00B2FE;
+/* z-index: 10; */
+  font-family: 'Montserrat', sans-serif;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 500;
+}
+p {
+  color: var(--text-color);
+}
+a {
+    text-decoration: none;
+}
+.no-select {
+  user-select: none;
+}
+/* containers */
+.container {
+  margin: 0 auto;
+  /* position: relative; */
+  /* padding: 0 8%; */
+  z-index: 1000;
+  width: 1400px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  z-index: 10;
+}
+.container-left {
+  border-left: 1px solid rgb(0, 26, 255);
+}
+/* .container-right {
+  padding: 0 0 0 8%;
+} */
+/* OTHER STYLES =========================================================================================================== */
+
+
+
+/* RESPONSIVE STYLES =========================================================================================================== */

@@ -1,0 +1,21 @@
+.reviews {
+    /* height: 500px; */
+    padding-bottom: 50px;
+    background-color: white;
+    padding-top: 25px;
+    
+}
+.reviews-wrapper {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.reviews-title {
+
+    text-align: center;
+    font-weight: 700;
+font-size: 30.4053px;
+line-height: 110%;
+letter-spacing: 0.02em;
+}
