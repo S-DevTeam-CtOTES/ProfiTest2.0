@@ -5,11 +5,6 @@ import LoginForm from '../../SignUpForm/SignUpForm'
 import './Header.css'
 
 const Header = () =>  {
-
-  
-
-  
-
     return (
         <div className="container">
           <header className="header hmobile">
@@ -19,7 +14,8 @@ const Header = () =>  {
               </a>
             <div className="nav-menu">
               <a href="#about" className="nav-link">О нас</a>
-              <a href="#about" className="nav-link">Тестирование</a>
+              <Link to="/quizze" className="nav-link">Тестирование</Link>
+              {/* <a href="#about" className="nav-link">Тестирование</a> */}
               <a href="#explore" className="nav-link">Курсы</a>
               <a href="#contacts" className="nav-link">Исследование</a>
               <a href="#FAQ" className="nav-link">Контакты</a>

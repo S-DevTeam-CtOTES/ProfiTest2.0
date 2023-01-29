@@ -3,7 +3,8 @@
   height: 105px;
   align-items: center;
   z-index: 10;
-  background: rgb(30, 102, 133);
+  background: #00B2FE;
+  /* background: rgb(30, 102, 133); */
   width: 100%;
   border-bottom: 1px solid white;
 }
