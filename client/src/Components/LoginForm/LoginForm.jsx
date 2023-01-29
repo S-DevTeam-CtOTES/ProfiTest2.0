@@ -3,13 +3,15 @@ import React, {FC, useContext, useState} from 'react'
 import { Link } from 'react-router-dom'
 import { Context } from '../..'
 import clesed from '../../../src/assets/icons/Cross.svg'
+import Store from '../../store/store'
 import './LoginForm.css'
 
 
 
 const LoginForm = () => {
-  const [active, setActive] = useState(true)
+  
 
+  const [active, setActive] = useState(true)
 
 const [email, setEmail] = useState('')
 const [password, setPassword] = useState('')
@@ -45,14 +47,15 @@ const {store} = useContext(Context)
 
         {/* <button onClick={() => store.login(email, password)}>Логин</button> */}
         <button className='modal-reg' onClick={() => store.login(email, password)}>Войти</button>
-
+      
 
         <div className="modal-login">
-        У вас нет аккаунта? <Link to="/SignUp">Зарегистрироваться</Link>.
+        У вас нет аккаунта? <Link to="/regestration">Зарегистрироваться</Link>.
         </div>
       </div>
     </div>
   )
+  
 }
 
 

@@ -130,7 +130,10 @@ color: #FFFFFF;
   padding: 15px;
 }
 
-
+.nav-btn-reg {
+  width: 250px;
+  margin-left: 15px;
+}
 /* .nav-link:before {
   content: "";
   width: 100%;

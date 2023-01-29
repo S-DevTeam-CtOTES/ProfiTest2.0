@@ -1,15 +1,18 @@
-import React, { Component, FC, useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { Component, FC, useContext, useState } from 'react'
+import { Link, NavLink, Route, Routes } from 'react-router-dom'
+import { Context } from '../../..'
+import Store from '../../../store/store'
+import SignUpForm from '../../SignUpForm/SignUpForm'
 import LoginForm from '../../SignUpForm/SignUpForm'
 // import "../../App/App.css";
 import './Header.css'
 
 const Header = () =>  {
 
+  const {store} = useContext(Context)
   
-
   
-
+  
     return (
         <div className="container">
           <header className="header hmobile">
@@ -24,13 +27,9 @@ const Header = () =>  {
               <a href="#contacts" className="nav-link">Исследование</a>
               <a href="#FAQ" className="nav-link">Контакты</a>
               <div className="nav-menu-btn">
-              <Link to="/login">
-              <button 
-              className='nav-btn'
-              
-              >Войти</button>
-              </Link>
-              
+              {!store.isAuth && <NavLink to="/login"><button className='nav-btn'>Войти</button></NavLink>}
+              {!store.isAuth && <NavLink to="/regestration"><button className='nav-btn-reg nav-btn'>Зарегистрироваться</button></NavLink>}
+              {store.isAuth && <NavLink to="/"><button className='nav-btn-reg nav-btn' onClick={() => store.logout()}>Выйти</button></NavLink>}
               </div>
             </div>
             
@@ -41,7 +40,7 @@ const Header = () =>  {
             </div>
           </nav>
         </header>
-
+        
         
       </div>
 

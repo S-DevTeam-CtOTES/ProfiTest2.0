@@ -1,9 +1,9 @@
 import { observer } from 'mobx-react-lite';
-import React, {FC, useContext, useEffect, useState} from 'react'
-import { Context } from '../..';
-import { IUser } from '../../models/IUser';
-import UserService from '../../service/UserService';
-import LoginForm from '../SignUpForm/SignUpForm';
+// import React, {FC, useContext, useEffect, useState} from 'react'
+// import { Context } from '../..';
+// import { IUser } from '../../models/IUser';
+// import UserService from '../../service/UserService';
+// import LoginForm from '../SignUpForm/SignUpForm';
 
 // const App: FC = () => {
 //     const {store} = useContext(Context)

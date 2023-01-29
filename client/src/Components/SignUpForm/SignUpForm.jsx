@@ -4,11 +4,13 @@ import React, {FC, useContext, useState} from 'react'
 import { Link } from 'react-router-dom'
 import { Context } from '../..'
 import clesed from '../../../src/assets/icons/Cross.svg'
+import Store from '../../store/store'
 import './SignUpForm.css'
 
 
 
 const SignUpForm = () => {
+
 
   const [active, setActive] = useState(true)
   
@@ -52,8 +54,8 @@ const SignUpForm = () => {
         </div>
 
 
-        {/* <button onClick={() => store.login(email, password)}>Логин</button> */}
-        <button className='modal-reg' onClick={() => store.registration(name, email, password)}>Зарегистрироваться</button>
+        <button onClick={() => store.login(email, password)}>Логин</button>
+        <button className='modal-reg' onClick={() => store.registration(email, password)}>Зарегистрироваться</button>
 
 
         <div className="modal-login">

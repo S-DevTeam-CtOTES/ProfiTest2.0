@@ -21,14 +21,12 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <BrowserRouter>
-  
       <Context.Provider value={{
         store
       }}>
         <App />
       </Context.Provider>
-  </BrowserRouter>
-
+      </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
