@@ -3,6 +3,7 @@ import { React, useState } from 'react';
 import {Helmet} from 'react-helmet';
 import { QuastionData, Proffesion  } from '../../data';
 import Button from '../../UI/Button';
+import Header from '../Lending/Header/Header';
 import { map } from './EmptyArray';
 import QuastionNumber from './QuastionNumber/QuastionNumber';
 import QuastionView from './QuastionView/QuastionView';
@@ -96,47 +97,50 @@ const Quizze = () => {
 
   
   return (
-    <div className="quizzmain">
+    <>
+    <Header />
+      <div className="quizzmain">
 
-      <Helmet>
-          <style>{'body { background-color: #CCDDEE; }'}</style>
-      </Helmet>
-      
-      <div className="quizzmain__container">
-        <div className="block__wrapper">
-            <div className="block">
+  <Helmet>
+      <style>{'body { background-color: #CCDDEE; }'}</style>
+  </Helmet>
+
+  <div className="quizzmain__container">
+    <div className="block__wrapper">
+        <div className="block">
 
 
-            {result ? <>
-              <QuastionView  
-            changeCheckbox={changeCheckbox}
-            quastionIndex={quastionIndex } 
-            current={current} 
-            changeRadio={changeRadio} 
-            checked={checked}
-            data={quastion}/>
-            <QuastionNumber quastionIndex={quastionIndex}/>
-            </>
-            : <Result data={Proffesion}/> }
+        {result ? <>
+          <QuastionView  
+        changeCheckbox={changeCheckbox}
+        quastionIndex={quastionIndex } 
+        current={current} 
+        changeRadio={changeRadio} 
+        checked={checked}
+        data={quastion}/>
+        <QuastionNumber quastionIndex={quastionIndex}/>
+        </>
+        : <Result data={Proffesion}/> }
 
-            <div className="btns">
-            
-              { resultButton ? <Button
-                onClick={refreshWindow}
-              >
-                Заново
-              </Button> : <Button
-              onClick={handelNext} 
-              disabled={current === null ? true : false}
-              >
-              Ответить
-              </Button>}
-              
-            </div>
-          </div>
+        <div className="btns">
+        
+          { resultButton ? <Button
+            onClick={refreshWindow}
+          >
+            Заново
+          </Button> : <Button
+          onClick={handelNext} 
+          disabled={current === null ? true : false}
+          >
+          Ответить
+          </Button>}
+          
         </div>
       </div>
     </div>
+  </div>
+  </div>
+    </>
   );
   }
 

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './Main.css'
-import phone from '../../../assets/img/Group 1122.png'
+import phone from '../../../assets/img/Group 1121.png'
+// import phone from '../../../assets/img/Group 1122.png'
+// import phone from '../../../assets/img/Group 1122.png'
 import { Link } from 'react-router-dom'
   
 
