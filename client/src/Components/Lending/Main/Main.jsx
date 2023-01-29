@@ -29,7 +29,9 @@ const Main = () =>  {
                 </div>
               </div>
           </div>
-              <img className="main-text-image" src={phone} alt="asfds" />  
+              <Link to="/quizze">
+                <img className="main-text-image" src={phone} alt="asfds" />
+              </Link>  
         </section>
       
     )

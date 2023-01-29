@@ -7,7 +7,7 @@ import eclipse from '../../../assets/icons/Ellipse 6 (1).svg'
 const Curce = () => {
 
     return (
-        <section className='curce'>
+        <section className='curce conteiner-white'>
             <div className="container padding">
                 <h2 className="curce-title">Курсы</h2>
                 <div className="curce-block">

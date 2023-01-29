@@ -1,7 +1,5 @@
 /* Google fonts */
 
-
-
 * {
   box-sizing: border-box;
 }
@@ -10,12 +8,11 @@ html,
 body {
   margin: 0px;
   scroll-behavior: smooth;
-  font-family: var(--font-family); /* fonts */
+  /* font-family: var(--font-family); fonts */
   color: var(--text-color);
-  background-color: #00B2FE;
-/* z-index: 10; */
-  font-family: 'Montserrat', sans-serif;
-
+  background-color: #00b2fe;
+  /* z-index: 10; */
+  font-family: "Montserrat", sans-serif;
 }
 h1,
 h2,
@@ -31,7 +28,7 @@ p {
   color: var(--text-color);
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .no-select {
   user-select: none;
@@ -50,11 +47,16 @@ a {
 .container-left {
   border-left: 1px solid rgb(0, 26, 255);
 }
-/* .container-right {
-  padding: 0 0 0 8%;
-} */
+.conteiner-blue {
+  border-left: 1px solid rgb(0, 26, 255);
+  border-right: 1px solid rgb(0, 26, 255);
+  z-index: 10;
+}
+.conteiner-white {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  z-index: 10;
+}
 /* OTHER STYLES =========================================================================================================== */
-
-
 
 /* RESPONSIVE STYLES =========================================================================================================== */

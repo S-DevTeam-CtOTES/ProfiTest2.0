@@ -1,12 +1,12 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    /* font-family: 'Comfortaa', cursive;     */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* font-family: 'Comfortaa', cursive;     */
 }
 
 .quizzmain {
@@ -22,8 +22,6 @@
   /* overflow: hidden; */
   /* position: relative; */
 }
-
-
 
 .quizzmain__container {
   margin: 0 auto;
@@ -54,12 +52,14 @@
   display: flex;
 }
 
-.toanswer, .tohome, .toform {
+.toanswer,
+.tohome,
+.toform {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   padding: 20px 50px 20px 50px;
-  background: #FF226D;
+  background: #ff226d;
   color: #eee;
   font-size: 23px;
   width: 100%;
@@ -78,9 +78,3 @@
   background-color: rgba(167, 167, 167, 0.655);
   background-color: rgba(36, 94, 121, 0.303);
 }
-
-
-
-
-
-

@@ -13,7 +13,7 @@ const CurceComponent = () => {
                 <div className="CurceComponent-title">Python разработчик</div>
                 <div className="CurceComponent-text">В современном обществе существует проблема профориентации, команда проекта пытается её решить! Мы подготовили профориентационный тест, который поможет определиться с наиболее подходящей для вас профессией и помочьв её освоении.</div>
                 <button
-                className="CurceComponent-btn">Больше курсов</button>
+                className="CurceComponent-btn">Подробнее</button>
             </div>
                 <div className="back"></div>    
         </div>

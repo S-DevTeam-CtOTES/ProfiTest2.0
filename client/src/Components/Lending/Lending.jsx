@@ -15,6 +15,7 @@ import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import Main from './Main/Main';
 import Reviews from './Reviews/Reviews';
+import Team from './Team';
 
 
 const Lending = () => {
@@ -33,6 +34,7 @@ const Lending = () => {
                 <Explore/>
                 <Curce/>
                 <Reviews/>
+                {/* <Team /> */}
                 <Footer/>
             
             </div>

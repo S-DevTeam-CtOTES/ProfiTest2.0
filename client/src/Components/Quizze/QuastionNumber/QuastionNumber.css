@@ -1,5 +1,8 @@
-.result {
+.result__title {
     text-align: center;
+}
+.result {
+    /* text-align: center; */
     padding: 20px 0;
 }
 

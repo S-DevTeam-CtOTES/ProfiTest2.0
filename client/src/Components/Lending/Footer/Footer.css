@@ -1,4 +1,35 @@
 .footer {
-    height: 300px;
-    background-color: dimgray;
+    background: #072649;
+}
+.footer__container {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    z-index: 10;
+}
+.footer__logo {
+    font-size: 2rem;
+    color: #fff;
+}
+.footer__logo a {
+    color: #fff;
+}
+.footer__socials {
+    color: #fff;
+}
+.footer__links {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
+.footer__links-item {
+    display: flex;
+    color: #fff;
 }

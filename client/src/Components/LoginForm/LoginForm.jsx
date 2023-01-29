@@ -11,7 +11,7 @@ import './LoginForm.css'
 const LoginForm = () => {
   
 
-  const [active, setActive] = useState(true)
+const [active, setActive] = useState(true)
 
 const [email, setEmail] = useState('')
 const [password, setPassword] = useState('')

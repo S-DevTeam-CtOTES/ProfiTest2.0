@@ -9,7 +9,7 @@ import p3 from '../../../assets/icons/Ellipse 112.svg'
 const Reviews = () => {
     return (
         <section className='reviews'>
-            <div className="container">
+            <div className="container conteiner-blue">
                 <div className="reviews-title">Отзывы</div>
                 <div className="reviews-wrapper">
                     

@@ -1,0 +1,87 @@
+.team {
+}
+.container {
+}
+.team-content {
+  width: 100%;
+  
+}
+.team__title {
+  margin: 40px auto;
+  padding: 0 60px;
+}
+.cont {
+  padding: 0 60px;
+}
+.team__title h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 112.502px;
+  line-height: 97.19%;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+.team__pople-box {
+    padding: 40px 40px 0 40px;
+    width: 100%;
+    background: #FFFFFF;
+    margin-bottom: 5%;
+}
+.members__box {
+    margin: 20px auto;
+    display: flex;
+    width: 60%;
+    /* height: 497.05px; */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+.team__card {
+    height: auto;
+    padding: 0 20px;
+}
+.team__card-box {
+  position: relative;
+  width: 285.25px;
+  height: 172.62px;
+  border-radius: 7.7px;
+  background-color: white;
+  border: 1px solid #0184ff;
+  z-index: 3;
+  -webkit-box-shadow: 13px 10px 1px -8px rgba(1, 132, 255, 1);
+  -moz-box-shadow: 13px 10px 1px -8px rgba(1, 132, 255, 1);
+  box-shadow: 13px 10px 1px -8px rgba(1, 132, 255, 1);
+}
+.team__card-img {
+  position: relative;
+    width: 275.68px;
+    height: 336.88px;
+    z-index: 4;
+}
+.team__card-img img {
+  width: 100%;
+  height: 100%;
+}
+.team__card-name {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 72px;
+  /* font-family: "Montserrat"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32.4818px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  z-index: 2;
+  margin: 25px auto;
+  /* text-align: center; */
+}
+.team__card-role {
+  text-align: center;
+}
+.team__subtitle {
+}
