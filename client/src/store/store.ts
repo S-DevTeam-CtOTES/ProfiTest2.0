@@ -4,8 +4,10 @@ import AuthService from "../service/AuthService";
 import axios from 'axios'
 import { AuthResponse } from "../models/response/AuthResponse";
 import {REACT_API_URL} from '../http/index'
+import { useNavigate, Navigate, useLocation } from "react-router-dom";
 
 // const API_URL = `http://localhost:5000/api`
+
 
 export default class Store {
     user = {} as IUser;
@@ -28,12 +30,14 @@ export default class Store {
     }
 
     async login(email: string, password: string) {
+        // const location = useLocation();
         try {
             const response = await AuthService.login(email, password);
             console.log(response)
             localStorage.setItem('token', response.data.accessToken);
             this.setAuth(true);
             this.setUser(response.data.user);
+            // navigate('/');
         } catch (e) {
             if (e instanceof Error) {
                 console.log(e);
@@ -49,10 +53,13 @@ export default class Store {
             this.setAuth(true);
             console.log(this.isAuth)
             this.setUser(response.data.user);
+            
         } catch (e) {
             if (e instanceof Error) {
                 console.log(e.message);
             }
+        } finally {
+
         }
     }
 
@@ -83,7 +90,6 @@ export default class Store {
             }
         } finally {
             this.setLoading(false)
-
         }
     }
 }

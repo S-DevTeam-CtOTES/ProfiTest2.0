@@ -1,6 +1,6 @@
 import './App.css'
 import Quizze from '../Quizze/Quizze'
-import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import { Routes, Route, BrowserRouter, useNavigate } from 'react-router-dom'
 import Lending from '../Lending/Lending'
 import { useContext, useEffect } from 'react'
 import { Context } from '../..'
@@ -27,8 +27,10 @@ const App = ()  => {
     }
     console.log(store)
 
-}, [])
- 
+  }, [])
+  
+    // const navigate = useNavigate();
+
       return (
 
         <Routes>
@@ -37,6 +39,9 @@ const App = ()  => {
             <Route path='/login' element={<LoginForm/>}/>
             <Route path='/regestration' element={<SignUpForm/>}/>
           </>}
+
+            
+
           <Route path='/quizze' element={<Quizze/>}/>
         </Routes>
       )

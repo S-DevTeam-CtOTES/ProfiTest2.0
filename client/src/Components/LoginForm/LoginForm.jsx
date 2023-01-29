@@ -1,6 +1,6 @@
 import { observer } from 'mobx-react-lite'
 import React, {FC, useContext, useState} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Context } from '../..'
 import clesed from '../../../src/assets/icons/Cross.svg'
 import Store from '../../store/store'
@@ -16,6 +16,15 @@ const LoginForm = () => {
 const [email, setEmail] = useState('')
 const [password, setPassword] = useState('')
 const {store} = useContext(Context)
+
+
+const navigate = useNavigate();
+
+
+  const loginRedirect = () => {
+    store.login(email, password)
+    navigate('/')
+  }
 
   return (
     <div className={active ? 'modal active__modal' : 'modal'} >
@@ -46,7 +55,7 @@ const {store} = useContext(Context)
 
 
         {/* <button onClick={() => store.login(email, password)}>Логин</button> */}
-        <button className='modal-reg' onClick={() => store.login(email, password)}>Войти</button>
+        <button className='modal-reg' onClick={() => loginRedirect()}>Войти</button>
       
 
         <div className="modal-login">

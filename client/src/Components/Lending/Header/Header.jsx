@@ -10,7 +10,7 @@ import './Header.css'
 const Header = () =>  {
 
   
-
+    const {store} = useContext(Context)
   
 
     return (
