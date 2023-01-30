@@ -25,7 +25,7 @@ class Form extends Component {
         event.preventDefault();
         if (this.state.email || this.state.login || this.state.message === '') {
             console.log('Nothing typed to form')
-            window.location.reload(false);
+            // window.location.reload(false);
         } else {
           window.location.reload(false);
         // console.log(
@@ -83,7 +83,7 @@ class Form extends Component {
     return (
         <div className='log-form'>
             <form 
-              onSubmit={this.handleSubmit}
+              // onSubmit={this.handleSubmit}
               className='telegram-form' 
               onClick={async () => {
                 try {
@@ -100,7 +100,7 @@ class Form extends Component {
                       params: {
                         field: output
                       },
-                      method: "GET",
+                      method: "POST",
                       data: null
                     }).then(({ data }) => {
                       return data;
