@@ -12,8 +12,11 @@ const Footer = () => {
             <div className="footer__container " id='contacts'>
                 <div className="footer__logo">
                     <a href="/">PROFITEST</a>
+                    <hr />
+                    <p className='powered'>Powered by <a className='powered' href="https://tehnosoft.site">ITC Tehnosoft</a></p>
                 </div>
                 <div className="footer__socials">
+                    <h1>Контакты</h1>
                     <div className="footer__links">
                         <a href="https://t.me/profitestnews" className="footer__links-item" target="_blank">
                             <img className='social-icon' src={telegram} alt="Telegram" />
