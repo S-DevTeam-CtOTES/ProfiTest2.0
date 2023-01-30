@@ -14,7 +14,6 @@ import Reviews from '../Lending/Reviews/Reviews'
 import Footer from '../Lending/Footer/Footer'
 import { observe } from 'mobx'
 import { observer } from 'mobx-react-lite'
-import PersonRoom from '../PersonRoom/PersonRoom'
 
 
 
@@ -41,7 +40,7 @@ const App = ()  => {
             <Route path='/regestration' element={<SignUpForm/>}/>
           </>}
 
-          <Route path='/Room' element={<PersonRoom/>}/>
+            
 
           <Route path='/quizze' element={<Quizze/>}/>
         </Routes>

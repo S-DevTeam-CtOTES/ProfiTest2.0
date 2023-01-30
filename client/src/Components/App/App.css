@@ -33,6 +33,12 @@ a {
 .no-select {
   user-select: none;
 }
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgba(255, 255, 255, .8);
+  scrollbar-width: thin;
+}
 /* containers */
 .container {
   margin: 0 auto;

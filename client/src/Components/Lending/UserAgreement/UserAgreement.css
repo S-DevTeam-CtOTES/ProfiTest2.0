@@ -1,0 +1,9 @@
+.user__agreement {
+    padding: 6% 20px;
+    color: #373737;
+    background: rgba(235, 226, 226, .6);
+    user-select: none;
+}
+.user__agreement ul {
+    padding: 0 20px;
+}
