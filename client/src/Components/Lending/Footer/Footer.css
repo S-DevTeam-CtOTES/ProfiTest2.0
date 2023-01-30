@@ -50,3 +50,12 @@
     margin: 5px 0;
     height: 1px;
 }
+
+
+
+@media screen and (max-width: 576px) { 
+
+    .footer__container  {
+        flex-wrap: wrap;
+    }
+}

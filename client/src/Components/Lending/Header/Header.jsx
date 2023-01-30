@@ -1,6 +1,7 @@
 import React, { Component, FC, useContext, useState } from 'react'
 import { Link, NavLink, Route, Routes } from 'react-router-dom'
 import { Context } from '../../..'
+import { FaBars, FaTimes } from "react-icons/fa";
 import Store from '../../../store/store'
 import SignUpForm from '../../SignUpForm/SignUpForm'
 import LoginForm from '../../SignUpForm/SignUpForm'
@@ -11,6 +12,11 @@ const Header = () =>  {
     const {store} = useContext(Context)
   
     const [open, setOpen] = useState(false)
+    const [active, setActive] = useState(false)
+
+    const handleBurger = () => {
+      setActive(!active)
+    }
     
     return (
         <div className="container">
@@ -38,17 +44,41 @@ const Header = () =>  {
                 </div>}
               </div>
               }
-              {/* {!store.isAuth && <NavLink to="/regestration"><button className='nav-btn-reg nav-btn'>Зарегистрироваться</button></NavLink>} */}
-              {/* {store.isAuth && } */}
+              
               </div>
             </div>
             
-            <div className="hamburger">
+            <div onClick={handleBurger} className="hamburger">
               <span className="bar"></span>
               <span className="bar"></span>
               <span className="bar"></span>
             </div>
           </nav>
+
+          <div className={active === true ? 'active-burger-modal burger-modal': 'burger-modal'}>
+            <div className="burger-modal-wrapper">
+              <div onClick={() => setActive(false)} className="fa-bur"><FaTimes/></div>
+              <div className="burger-modal-block">
+              <NavLink to='/quizze' className="burger-modal-item">Тестирование</NavLink>
+              <NavLink className="burger-modal-item">Курсы</NavLink>
+              <NavLink className="burger-modal-item">Исследование</NavLink>
+              <NavLink className="burger-modal-item">Контакты</NavLink>
+              {/* <NavLink to='/Room' className="burger-modal-item">Личный кабинет</NavLink> */}
+              <div className="nav-menu-btn  mobail-center">
+              {!store.isAuth && <NavLink to="/login"><button className='nav-btn'>Войти</button></NavLink>}
+              {store.isAuth &&  <div className="nav-drop">
+                <button onClick={() => setOpen(!open)} className="nav-drop-name nav-btn-reg nav-btn">{store.user.name}</button>
+                {open && <div className="nav-down">
+                  <NavLink to="/Room"><div className="nav-down-select">Личный кабинет</div></NavLink>
+                  <NavLink to="/"><div className='nav-down-select' onClick={() => store.logout()}>Выйти</div></NavLink>
+                </div>}
+              </div>
+              }
+              
+              </div>
+              </div>
+            </div>
+          </div>
         </header>
         
         

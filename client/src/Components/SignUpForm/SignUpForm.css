@@ -127,3 +127,15 @@
   font-weight: 400;
   font-size: 20px;
 } */
+
+
+@media screen and (max-width: 576px) {  
+
+  .modal-content-signup {
+    width: 100%;
+  }
+
+  .modal-reg {
+    width: 100%;
+  }
+}

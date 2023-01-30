@@ -55,3 +55,14 @@ letter-spacing: 0.02em;
     left: 7px;
     border: 1px solid white;
 }
+
+
+
+@media screen and (max-width: 576px) { 
+    .ReviewsComponent {
+        width: 100%;
+    }
+    .ReviewsComponent-back {
+        width: 100%;
+    }
+}

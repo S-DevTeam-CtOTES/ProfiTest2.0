@@ -9,7 +9,7 @@ const Explore = () => {
             <div className="container conteiner-blue">
                 <div className="explore-flex">
                     <div >
-                    <img src={computer} alt="computer" />
+                    <img src={computer} alt="computer" className='explore-img' />
                     </div>
                     <div className="explore-block">
                         <div className="explore-block-title">Исследование</div>

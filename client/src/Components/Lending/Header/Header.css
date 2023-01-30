@@ -1,3 +1,5 @@
+
+
 .header {
   position: fixed;
   height: 105px;
@@ -52,7 +54,7 @@
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: var(--white);
+  background-color: white;
 }
 
 .nav-menu {
@@ -182,21 +184,69 @@
 
 
 }
-/* .nav-link:before {
-  content: "";
+
+.active-burger-modal {
+  left: 0 !important;
+
+}
+
+.burger-modal {
+  overflow: hidden;
+  left: -100%;
   width: 100%;
-  height: 1px;
-  background-color: var(--white);
+  z-index: 10;
+  position: fixed;
+  /* // width: 345px; */
+  height: 100vh;
+  transition: 0.6s all;
+  /* width: 100vw; */
+  background-color: rgba(0, 0, 0, 0.785);
+}
+
+.burger-modal-wrapper {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  padding-top: 140px;
+  transition: 0.6s all;
+}
+
+.burger-modal-item {
+  text-decoration: none;
+            width: 100%;
+            display: block;
+            padding: 15px 0 15px 0;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: background 0.4s;
+}
+
+.burger-modal-item:hover {
+  background: rgba(134, 134, 134, 0.638);
+}
+
+.fa-bur {
+  /* display: inline-block; */
+  height: 30px;
+  top: 30px;
+  right: 30px;
+  left: auto;
   position: absolute;
-  left: 0;
-  bottom: -3px;
-  transform: scaleX(0);
-  transform-origin: right;
-  -webkit-transition: -webkit-trasform 0.25s;
-  transition: -webkit-transform 0.25s;
-  -o-transition: transform 0.25s;
-  transition: transform 0.25s, -webkit-transform 0.25s;
-} */
+  color: white;
+}
+
+.fa-bur svg {
+  
+  width: 30px;
+  height: 30px;
+}
+
+.burger-modal-block {
+  text-align: center;
+  padding-top: 270px;
+}
+
+
 .logo__img {
   width: 40px;
   height: 40px;
@@ -218,5 +268,25 @@
     font-size: 40px;
     font-weight: 700;
     padding-top: 20px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+  }
+  .nav-menu {
+    display: none; 
+    
+  }
+  .hamburger {
+    margin-right: 20px;
+    display: block;
+    /* background-color: #fff; */
+
+  }
+  .mobail-center {
+    justify-content: center;
   }
 }
