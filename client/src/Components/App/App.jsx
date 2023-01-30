@@ -17,6 +17,7 @@ import { observer } from 'mobx-react-lite'
 import PrivacyPolicy from '../Lending/PrivacyPolicy'
 import PersonRoom from '../PersonRoom/PersonRoom'
 import CoursesPage from '../../Pages/CoursesPage'
+import UserAgreement from '../Lending/UserAgreement'
 
 
 
@@ -46,6 +47,8 @@ const App = ()  => {
             <Route path='/Room' element={<PersonRoom/>}/>
             <Route path='/courses' element={<CoursesPage />}/>
             <Route path='/quizze' element={<Quizze/>}/>
+            <Route path='/user-agreement' element={<UserAgreement />}/>
+            <Route path='/privacy_policy' element={<PrivacyPolicy />}/>
         </Routes>
       )
   
