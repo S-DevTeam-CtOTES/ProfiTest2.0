@@ -2,12 +2,12 @@ export let Peoples = [
     {
         name: "Авдюшин Добрыня",
         role: "Разработчик",
-        avatar: "/peoples/Авдюшин.jpg",
+        avatar: "/peoples/Авдюшин.png",
     },
     {
         name: "Кудрявцев Павел",
         role: "Юрист",
-        avatar: "/peoples/Кудрявцев_2.jpg",
+        avatar: "/peoples/Кудрявцев2.png",
     },
     {
         name: "Архаров Егор",
@@ -17,12 +17,12 @@ export let Peoples = [
     {
         name: "Львов Никита",
         role: "Разработчик",
-        avatar: "/peoples/львов.jpg",
+        avatar: "/peoples/Львов.png",
     },
     {
         name: "Смирнов Сергей",
         role: "Дизайнер UX/UI",
-        avatar: "/peoples/Смирнов.jpg",
+        avatar: "/peoples/Смирнов.png",
     },
     {
         name: "Герасимов Дмитрий",

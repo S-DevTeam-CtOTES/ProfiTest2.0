@@ -14,6 +14,8 @@ import Reviews from '../Lending/Reviews/Reviews'
 import Footer from '../Lending/Footer/Footer'
 import { observe } from 'mobx'
 import { observer } from 'mobx-react-lite'
+import UserAgreement from './../Lending/UserAgreement/index';
+import PrivacyPolicy from '../Lending/PrivacyPolicy'
 
 
 
@@ -42,7 +44,9 @@ const App = ()  => {
 
             
 
-          <Route path='/quizze' element={<Quizze/>}/>
+          <Route path='/quizze' element={<Quizze />}/>
+          <Route path='/user-agreement' element={<UserAgreement />}/>
+          <Route path='/privacy_policy' element={<PrivacyPolicy />}/>
         </Routes>
       )
   

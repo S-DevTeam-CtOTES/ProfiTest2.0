@@ -9,7 +9,9 @@ const QuastionNumber = ({quastionIndex}) => {
 
     return (
         <div className='result'>
-            Вопрос {quastionIndex + 1} из {QuastionData.length}    
+           <div className="quiestion__number">
+            Вопрос {quastionIndex + 1} из {QuastionData.length}
+           </div>    
         </div>
     );
 }

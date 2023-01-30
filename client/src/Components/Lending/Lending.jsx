@@ -4,6 +4,8 @@ import { Context } from '../..';
 import Store from '../../store/store';
 import LoginForm from '../LoginForm/LoginForm';
 import SignUpForm from '../SignUpForm/SignUpForm';
+import ContactForm from './ContactForm/ContactForm';
+import Copyright from './Copyright';
 import Curce from './Curce/Curce';
 import Explore from './Explore/Explore';
 import Footer from './Footer/Footer';
@@ -34,8 +36,10 @@ const Lending = () => {
                 <Explore/>
                 <Curce/>
                 <Reviews/>
+                <ContactForm />
                 {/* <Team /> */}
                 <Footer/>
+                <Copyright />
             
             </div>
         );
