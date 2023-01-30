@@ -28,7 +28,9 @@
 .footer__links {
     display: flex;
     gap: 10px;
-    flex-direction: column;
+    height: 40px;
+    align-items: center;
+    /* flex-direction: column; */
 }
 .social-icon {
     width: 20px;
@@ -37,6 +39,8 @@
 .footer__links-item {
     display: flex;
     color: #fff;
+    height: 40px;
+    align-items: center;
 }
 .powered {
     font-size: 11px;
