@@ -21,15 +21,15 @@ const {store} = useContext(Context)
 const navigate = useNavigate();
 
 
-  const loginRedirect = () => {
-    store.login(email, password)
+  const loginRedirect = async () => {
+    await store.login(email, password)
     navigate('/')
   }
 
   return (
     <div className={active ? 'modal active__modal' : 'modal'} >
       
-      <div className="modal-content" onClick={e => e.stopPropagation()}>
+      <div className="modal-content-login" onClick={e => e.stopPropagation()}>
         <Link to='/'><div className='clesed' onClick={() => setActive(false)}><img src={clesed} alt="clesed" /></div></Link>
 
         <div className="modal-title">PROFITEST</div>

@@ -9,6 +9,8 @@ import './Header.css'
 
 const Header = () =>  {
     const {store} = useContext(Context)
+  
+    const [open, setOpen] = useState(false)
     
     return (
         <div className="container">
@@ -28,8 +30,16 @@ const Header = () =>  {
               <a href="#contacts" className="nav-link">Контакты</a>
               <div className="nav-menu-btn">
               {!store.isAuth && <NavLink to="/login"><button className='nav-btn'>Войти</button></NavLink>}
+              {store.isAuth &&  <div className="nav-drop">
+                <button onClick={() => setOpen(!open)} className="nav-drop-name nav-btn-reg nav-btn">{store.user.name}</button>
+                {open && <div className="nav-down">
+                  <NavLink to="/Room"><div className="nav-down-select">Личный кабинет</div></NavLink>
+                  <NavLink to="/"><div className='nav-down-select' onClick={() => store.logout()}>Выйти</div></NavLink>
+                </div>}
+              </div>
+              }
               {/* {!store.isAuth && <NavLink to="/regestration"><button className='nav-btn-reg nav-btn'>Зарегистрироваться</button></NavLink>} */}
-              {store.isAuth && <NavLink to="/"><button className='nav-btn-reg nav-btn' onClick={() => store.logout()}>Выйти</button></NavLink>}
+              {/* {store.isAuth && } */}
               </div>
             </div>
             

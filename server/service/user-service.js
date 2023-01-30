@@ -8,7 +8,7 @@ const ApiError = require('../exeptions/api-error');
 
 
 class UserService {
-    async regestration(email, password) {
+    async regestration(name, surname, email, password) {
         const candidate = await UserModel.findOne({email})
         if (candidate) {
             throw ApiError.BadRequest(`Пользователь с почтовым адресом ${email} уже существует`)
@@ -16,7 +16,7 @@ class UserService {
         // console.log('lol')
         const hashPassword = await bcrypt.hash(password, 3);
         const activationLink = uuid.v4();
-        const user = await UserModel.create({email, password: hashPassword, activationLink});
+        const user = await UserModel.create({name, surname, email, password: hashPassword, activationLink});
         await mailService.sendActivationMail(email, `${process.env.API_URL}/api/activate/${activationLink}`);
 
         const userDto = new UserDto(user);

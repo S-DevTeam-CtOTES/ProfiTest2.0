@@ -16,28 +16,37 @@ const SignUpForm = () => {
   
 
   const [name, setName] = useState('')
+  const [surname, setSurname] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const {store} = useContext(Context)
 
   const navigate = useNavigate();
   
-  const loginRedirect = () => {
-    store.registration(email, password)
+  const loginRedirect = async () => {
+    await store.registration(name,surname, email, password)
     navigate('/')
   }
 
   return (
     <div className={active ? 'modal active__modal' : 'modal'} >
       
-      <div className="modal-content" onClick={e => e.stopPropagation()}>
+      <div className="modal-content-signup" onClick={e => e.stopPropagation()}>
       <Link to='/'><div className='clesed' onClick={() => setActive(false)}><img src={clesed} alt="clesed" /></div></Link>
         <div className="modal-title">PROFITEST</div>
-        <div className="modal-hintname mt">ФИО</div>
+        <div className="modal-hintname mt">Имя</div>
         <input 
         className='modal-name'
         onChange={e => setName(e.target.value)}
         value={name}
+        type="text" 
+        placeholder='Ваше имя' />
+
+        <div className="mt">Фамилия</div>
+        <input 
+        className='modal-name'
+        onChange={e => setSurname(e.target.value)}
+        value={surname}
         type="text" 
         placeholder='Ваше имя' />
 
