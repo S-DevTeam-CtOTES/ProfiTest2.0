@@ -31,7 +31,7 @@ const Header = () =>  {
               {/* <a href="#about" className="nav-link">О нас</a> */}
               <Link to="/quizze" className="nav-link">Тестирование</Link>
               {/* <a href="#about" className="nav-link">Тестирование</a> */}
-              <a href="#courses" className="nav-link">Курсы</a>
+              <a href="/#courses" className="nav-link">Курсы</a>
               <a href="#explore" className="nav-link">Исследование</a>
               <a href="#contacts" className="nav-link">Контакты</a>
               <div className="nav-menu-btn">
