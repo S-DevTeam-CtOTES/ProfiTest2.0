@@ -1,3 +1,8 @@
+.conteiner-white {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  z-index: 10;
+}
 .contacts {
   margin: 40px 0;
   color: #fff;

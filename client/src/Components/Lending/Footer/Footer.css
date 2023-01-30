@@ -20,10 +20,17 @@
 .footer__socials {
     color: #fff;
 }
+.footer__socials h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
 .footer__links {
     display: flex;
     gap: 10px;
-    flex-direction: column;
+    height: 40px;
+    align-items: center;
+    /* flex-direction: column; */
 }
 .social-icon {
     width: 20px;
@@ -32,4 +39,14 @@
 .footer__links-item {
     display: flex;
     color: #fff;
+    height: 40px;
+    align-items: center;
+}
+.powered {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.footer__logo hr {
+    margin: 5px 0;
+    height: 1px;
 }

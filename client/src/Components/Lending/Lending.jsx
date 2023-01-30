@@ -36,7 +36,7 @@ const Lending = () => {
                 <Explore/>
                 <Curce/>
                 <Reviews/>
-                <ContactForm />
+                {/* <ContactForm /> */}
                 {/* <Team /> */}
                 <Footer/>
                 <Copyright />
