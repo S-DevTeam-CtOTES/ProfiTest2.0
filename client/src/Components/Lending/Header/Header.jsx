@@ -60,9 +60,9 @@ const Header = () =>  {
               <div onClick={() => setActive(false)} className="fa-bur"><FaTimes/></div>
               <div className="burger-modal-block">
               <NavLink to='/quizze' className="burger-modal-item">Тестирование</NavLink>
-              <NavLink className="burger-modal-item">Курсы</NavLink>
-              <NavLink className="burger-modal-item">Исследование</NavLink>
-              <NavLink className="burger-modal-item">Контакты</NavLink>
+              <NavLink to="/courses" className="burger-modal-item">Курсы</NavLink>
+              <NavLink to="#explore" className="burger-modal-item">Исследование</NavLink>
+              <NavLink to="/#contacts" className="burger-modal-item">Контакты</NavLink>
               {/* <NavLink to='/Room' className="burger-modal-item">Личный кабинет</NavLink> */}
               <div className="nav-menu-btn  mobail-center">
               {!store.isAuth && <NavLink to="/login"><button className='nav-btn'>Войти</button></NavLink>}
