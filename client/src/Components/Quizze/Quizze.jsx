@@ -9,6 +9,7 @@ import QuastionNumber from './QuastionNumber/QuastionNumber';
 import QuastionView from './QuastionView/QuastionView';
 
 import './Quizze.css';
+// import './Responsive.css';
 import Result from './Result/Result';
 
 
