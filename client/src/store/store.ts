@@ -34,9 +34,9 @@ export default class Store {
         try {
             const response = await AuthService.login(email, password);
             console.log(response)
-            localStorage.setItem('token', response.data.accessToken);
+            localStorage.setItem('token', response?.data?.accessToken);
             this.setAuth(true);
-            this.setUser(response.data.user);
+            this.setUser(response?.data?.user);
             // navigate('/');
             // console.log(this.user.name)
         } catch (e) {
@@ -52,8 +52,8 @@ export default class Store {
             console.log(response)
             localStorage.setItem('token', response.data.accessToken);
             this.setAuth(true);
-            console.log(this.isAuth)
-            this.setUser(response.data.user);
+            console.log(this?.isAuth)
+            this.setUser(response?.data?.user);
             
         } catch (e) {
             if (e instanceof Error) {
@@ -82,9 +82,9 @@ export default class Store {
         try {
             const response = await axios.get<AuthResponse>(`${REACT_API_URL}/refresh`, {withCredentials: true});
             console.log(response)
-            localStorage.setItem('token', response.data.accessToken);
+            localStorage.setItem('token', response?.data?.accessToken);
             this.setAuth(true);
-            this.setUser(response.data.user);
+            this.setUser(response?.data?.user);
         } catch (e) {
             if (e instanceof Error) {
                 console.log(e.message);

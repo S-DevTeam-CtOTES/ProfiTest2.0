@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="footer__logo">
                     <a href="/">PROFITEST</a>
                     <hr />
-                    <p className='powered'>Powered by <a className='powered' href="https://tehnosoft.site">ITC Tehnosoft</a></p>
+                    <p className='powered'>Powered by <a className='powered' href="https://tehnosoft.site" target="_blank">ITC Tehnosoft</a></p>
                 </div>
                 <div className="footer__socials">
                     <h1>Контакты</h1>

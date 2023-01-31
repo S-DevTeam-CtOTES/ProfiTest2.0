@@ -1,6 +1,12 @@
 .CurceComponent-wrapper {
-    padding: 0 20px;
-    margin-top: 150px;
+    padding: 0px 20px;
+    margin-top: 60px;
+}
+.courses__container {
+    padding: 20px 0;
+}
+.courses-top {
+    margin-top: 80px;
 }
 .CurceComponent {
     position: relative;

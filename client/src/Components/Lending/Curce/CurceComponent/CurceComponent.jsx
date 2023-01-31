@@ -1,5 +1,4 @@
 import React from 'react';
-// import python from '../../../../assets/icons/Python.svg'
 import { Link, NavLink, Route, Routes } from 'react-router-dom'
 import './CurceComponent.css'
 import { FavoriteCoursesData } from './FavoriteCoursesData';
