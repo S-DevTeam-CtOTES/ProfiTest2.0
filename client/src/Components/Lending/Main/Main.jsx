@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import './Main.css'
-import phone from '../../../assets/img/Group 1121.png'
+import phone from '../../../assets/img/Рука.png'
+import circleArrows from '../../../assets/img/circle-arrows.png'
+import ellipse from '../../../assets/img/Ellipse 4.png'
+// import phone from '../../../assets/img/new_hend.png'
+// import phone from '../../../assets/img/Group 1121.png'
 // import phone from '../../../assets/img/Group 1122.png'
 // import phone from '../../../assets/img/Group 1122.png'
 import { Link } from 'react-router-dom'
@@ -27,11 +31,16 @@ const Main = () =>  {
                   </div>
                   <Link to="/quizze"><button className="main-flex-content-btn">Пройти тест</button></Link>
                 </div>
+                <Link to="/quizze">
+                <div className="main-hend">
+                  <img className="main-text-image__phone" src={phone} alt="phone" />
+                  <img className="main-text-image__circle-arrows" src={circleArrows} alt="circle-arrows" />
+                  <img className="main-text-image__ellipse" src={ellipse} alt="ellipse-light" />
+                </div>
+              </Link>  
               </div>
           </div>
-              <Link to="/quizze">
-                <img className="main-text-image" src={phone} alt="asfds" />
-              </Link>  
+              
         </section>
       
     )

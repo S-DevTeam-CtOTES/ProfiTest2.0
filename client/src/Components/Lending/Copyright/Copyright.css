@@ -1,5 +1,6 @@
 .copyright {
-    background: #072649;
+    background: var(--footer-bgc);
+    /* background: #072649; */
     color: #fff;
     text-align: center;
     width: 100%;

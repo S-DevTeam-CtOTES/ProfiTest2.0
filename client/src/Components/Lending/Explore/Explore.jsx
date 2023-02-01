@@ -8,7 +8,7 @@ const Explore = () => {
         <section className='explore'>
             <div className="container conteiner-blue">
                 <div className="explore-flex">
-                    <div >
+                    <div className='explore-img__block'>
                     <img src={computer} alt="computer" className='explore-img' />
                     </div>
                     <div className="explore-block">

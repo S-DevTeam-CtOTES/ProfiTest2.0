@@ -60,9 +60,14 @@ letter-spacing: 0.02em;
 
 @media screen and (max-width: 576px) { 
     .ReviewsComponent {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .ReviewsComponent-text {
+        padding: 0 20px;
     }
     .ReviewsComponent-back {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
     }
 }

@@ -9,11 +9,12 @@
   padding-bottom: 30px;
 }
 .curce-title {
-  margin-left: 50px;
+  text-align: center;
+  /* margin-left: 50px; */
   font-weight: 700;
-  font-size: 39.4181px;
+  font-size: 3rem;
   line-height: 110%;
-  color: white;
+  color: #ffffff;
 }
 
 .curce-block {
