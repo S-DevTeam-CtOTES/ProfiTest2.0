@@ -6,7 +6,7 @@ import './Explore.css'
 const Explore = () => {
     return (
         <section className='explore'>
-            <div className="container conteiner-blue">
+            <div className="container conteiner-blue" id="explore">
                 <div className="explore-flex">
                     <div className='explore-img__block'>
                     <img src={computer} alt="computer" className='explore-img' />

@@ -2,6 +2,7 @@
 :root {
   --bgc: #0084BC;
   --footer-bgc: #036088;
+  --text: #37373;
 }
 * {
   box-sizing: border-box;

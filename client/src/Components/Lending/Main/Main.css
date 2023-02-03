@@ -156,9 +156,6 @@
     text-align: center;
     width: 100%;
     margin-left: 0px;
-    /* margin-left: 55px; */
-    /* width: 35%; */
-    /* width: 100%; */
     font-size: 20.7198px;
   }
 
@@ -169,5 +166,23 @@
 
   .main-flex-content-btn {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main-flex-content-title {
+    font-size: 3rem;
+    margin-top: 20px;
+  }
+  .main-flex-content {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .main-title {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20.7198px;
   }
 }
