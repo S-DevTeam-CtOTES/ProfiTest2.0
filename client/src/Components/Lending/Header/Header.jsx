@@ -5,7 +5,6 @@ import {FaBars, FaTimes} from "react-icons/fa";
 import Store from '../../../store/store'
 import SignUpForm from '../../SignUpForm/SignUpForm'
 import LoginForm from '../../SignUpForm/SignUpForm'
-// import "../../App/App.css";
 import './Header.css'
 
 const Header = () => {
@@ -30,9 +29,9 @@ const Header = () => {
                     <div className="nav-menu">
                         {/* <a href="#about" className="nav-link">О нас</a> */}
                         <Link to="/quizze" className="nav-link">Тестирование</Link>
-                        <a href="/courses" className="nav-link">Курсы</a>
-                        <a href="#explore" className="nav-link">Исследование</a>
-                        <a href="#contacts" className="nav-link">Контакты</a>
+                        <Link to="/courses" className="nav-link">Курсы</Link>
+                        <Link to="/explore" className="nav-link">Исследование</Link>
+                        <a href="/#contacts" className="nav-link">Контакты</a>
                         <div className="nav-menu-btn">
                             {!store.isAuth && <NavLink to="/login">
                                 <button className='nav-btn'>Войти</button>
@@ -67,7 +66,7 @@ const Header = () => {
                         <div className="burger-modal-block">
                             <NavLink to='/quizze' className="burger-modal-item">Тестирование</NavLink>
                             <NavLink to="/courses" className="burger-modal-item">Курсы</NavLink>
-                            <a href="/#explore" className="burger-modal-item">Исследование</a>
+                            <a href="/explore" className="burger-modal-item">Исследование</a>
                             <a href="/#contacts" className="burger-modal-item">Контакты</a>
                             {/* <NavLink to='/Room' className="burger-modal-item">Личный кабинет</NavLink> */}
                             <div className="nav-menu-btn  mobail-center">

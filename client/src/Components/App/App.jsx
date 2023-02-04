@@ -7,18 +7,13 @@ import Quizze from '../Quizze/Quizze'
 import Lending from '../Lending/Lending'
 import LoginForm from '../LoginForm/LoginForm'
 import SignUpForm from '../SignUpForm/SignUpForm'
-import Header from '../Lending/Header/Header'
-import Main from '../Lending/Main/Main'
-import Explore from '../Lending/Explore/Explore'
-import Curce from '../Lending/Curce/Curce'
-import Reviews from '../Lending/Reviews/Reviews'
-import Footer from '../Lending/Footer/Footer'
 import PrivacyPolicy from '../Lending/PrivacyPolicy'
 import PersonRoom from '../PersonRoom/PersonRoom'
 import CoursesPage from '../../Pages/CoursesPage'
 import UserAgreement from '../Lending/UserAgreement'
 import Err404 from '../../Pages/404/Err404'
 import './App.css'
+import ExplorePage from "../../Pages/ExplorePage/ExplorePage";
 
 const App = ()  => {
 
@@ -31,8 +26,6 @@ const App = ()  => {
     console.log(store)
 
   }, [])
-  
-    // const navigate = useNavigate();
 
       return (
 
@@ -45,6 +38,7 @@ const App = ()  => {
             
             <Route path='/Room' element={<PersonRoom/>}/>
             <Route path='/courses' element={<CoursesPage />}/>
+            <Route path='/explore' element={<ExplorePage />}/>
             <Route path='/quizze' element={<Quizze/>}/>
             <Route path='/user-agreement' element={<UserAgreement />}/>
             <Route path='/privacy_policy' element={<PrivacyPolicy />}/>

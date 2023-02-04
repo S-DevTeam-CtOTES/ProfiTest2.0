@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import computer from '../../../assets/img/Group 1124.svg'
 
 import './Explore.css'
@@ -14,7 +14,9 @@ const Explore = () => {
                     <div className="explore-block">
                         <div className="explore-block-title">Исследование</div>
                         <div className="explore-block-text">В современном обществе существует проблема профориентации, команда проекта пытается её решить! Мы подготовили профориентационный тест, который поможет определиться с наиболее подходящей для вас профессией и помочьв её освоении.</div>
-                        <button className="explore-block-btn">Изучить</button>
+                        <Link to="explore">
+                            <button className="explore-block-btn">Изучить</button>
+                        </Link>
                     </div>
                 </div>
             </div>
