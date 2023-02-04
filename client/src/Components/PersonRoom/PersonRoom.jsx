@@ -38,15 +38,15 @@ const PersonRoom = () => {
                     <div className="room__data">
                         <div className="room__data-name pd">
                             <div className="data-name__index index">Имя:</div>
-                            <div className="data-name__value value">Андрей</div>
+                            <div className="data-name__value value">{store.user.name}</div>
                         </div>
                         <div className="room__data-surname pd">
                             <div className="data-surname__index index">Фамилия:</div>
-                            <div className="data-surname__value value">Волков</div>
+                            <div className="data-surname__value value">{store.user.surname}</div>
                         </div>
                         <div className="room__data-email pd">
                             <div className="data-email__index index">EMail:</div>
-                            <div className="data-email__value value">volkov-vav@gmail.com</div>
+                            <div className="data-email__value value">{store.user.email}</div>
                         </div>
                     </div>
                     <div className="data__photo">
