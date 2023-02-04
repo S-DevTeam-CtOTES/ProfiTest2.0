@@ -126,7 +126,7 @@
 .nav-menu-btn {
   height: 100%;
   display: flex;
-  /*align-items: center;*/
+  align-items: center;
   border-right: 1px solid white ;
   padding: 15px;
   justify-content: center;
