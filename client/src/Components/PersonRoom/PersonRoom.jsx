@@ -3,20 +3,6 @@ import { Context } from '../..';
 import Header from '../Lending/Header/Header';
 import './PersonRoom.css'
 import userAvatar from '../../assets/icons/user-avatar.png'
- // <table>
- //                <tr>
- //                    <td>Имя</td>
- //                    <td>{store.user.name}</td>
- //                </tr>
- //                <tr>
- //                    <td>Фамилия</td>
- //                    <td>{store.user.surname}</td>
- //                </tr>
- //                <tr>
- //                    <td>Email</td>
- //                    <td>{store.user.email}</td>
- //                </tr>
- //                </table>
 
 const PersonRoom = () => {
 
