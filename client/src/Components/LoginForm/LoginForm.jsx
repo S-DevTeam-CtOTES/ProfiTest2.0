@@ -9,7 +9,6 @@ import './LoginForm.css'
 
 
 const LoginForm = () => {
-  
 
 const [active, setActive] = useState(true)
 
