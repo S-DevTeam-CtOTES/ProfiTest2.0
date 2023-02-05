@@ -56,3 +56,8 @@
     background: #FF226D;
     color: #ffffff;
 }
+@media screen and (max-width: 548px) {
+    .flex {
+        justify-content: center;
+    }
+}
