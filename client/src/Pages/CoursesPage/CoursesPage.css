@@ -1,12 +1,12 @@
-.courses__wrapper {
+.CurceComponent-wrapper {
+    padding: 0px 20px;
+    margin-top: 60px;
 }
 .courses__container {
+    padding: 20px 0;
 }
-.container {
-}
-.CurceComponent-wrapper {
-    padding: 0 20px;
-    margin-top: 150px;
+.courses-top {
+    margin-top: 80px;
 }
 .CurceComponent {
     position: relative;
@@ -24,8 +24,6 @@
     width: 100%;
     height: 100%;
 }
-.CurceComponent-title {
-}
 .CurceComponent-text {
     width: 100%;
     padding: 0 10px;
@@ -40,8 +38,6 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    /* margin: 0 auto; */
-    /* margin: 60px auto 20px auto; */
     width: 219px;
     height: 43.12px;
     font-weight: 700;
@@ -59,4 +55,9 @@
 .CurceComponent-btn:hover {
     background: #FF226D;
     color: #ffffff;
+}
+@media screen and (max-width: 548px) {
+    .flex {
+        justify-content: center;
+    }
 }

@@ -1,5 +1,6 @@
 .footer {
-    background: #072649;
+    background: var(--footer-bgc);
+    /* background: #072649; */
 }
 .footer__container {
     display: flex;
@@ -57,5 +58,6 @@
 
     .footer__container  {
         flex-wrap: wrap;
+        text-align: center;
     }
 }

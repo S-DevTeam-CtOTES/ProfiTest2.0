@@ -58,7 +58,7 @@ const navigate = useNavigate();
       
 
         <div className="modal-login">
-        У вас нет аккаунта? <Link to="/regestration">Зарегистрироваться</Link>.
+        <p>У вас нет аккаунта? <Link to="/regestration">Зарегистрироваться</Link>.</p>
         </div>
       </div>
     </div>

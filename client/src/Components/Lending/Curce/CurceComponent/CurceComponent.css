@@ -1,5 +1,8 @@
+:root {
+  --card-height: 445px; 
+}
 .CurceComponent {
-  height: 515.62px;
+  height: var(--card-height);
   position: relative;
   width: 283.49px;
   background: #ffffff;
@@ -60,7 +63,7 @@
 .back {
   position: absolute;
   width: 283.49px;
-  height: 515.62px;
+  height: var(--card-height);
   z-index: 2;
   background: #0084ff;
   top: 10px;
@@ -72,4 +75,15 @@
 
 .CurceComponent-wrapper {
   position: relative;
+}
+
+.courses__title {
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.courses__title h1 {
+  color: #fff;
+  font-size: 2.6rem;
+  text-transform: uppercase;
 }

@@ -73,20 +73,48 @@
 .main-flex-content-btn:hover {
   background: rgba(255, 34, 109, .8);
 }
-.main-text-image {
-  /* height: 100px; */
+.main-hend {
+  position: relative;
+  width: 1307px;
+  height: 100%;
+  user-select: none;
+  /* overflow: hidden; */
+}
+.main-text-image__phone {
+  position: absolute;
+  top: -34px;
+  left: 40px;
+  /*height: 100%;*/
+  z-index: 3;
+  overflow: hidden;
+  transform: scale(.9);
+  user-select: none;
+}
+.main-text-image__circle-arrows {
+  position: absolute;
+  top: -10px;
+  left: -180px;
+  /*height: 100%;*/
+  z-index: 2;
+  transform: scale(.96);
+  user-select: none;
+  /* overflow: hidden; */
+}
+.main-text-image__ellipse {
   position: absolute;
   top: -120px;
-  /* right: 400px; */
-  /* right: 100px; */
-  left: 760px;
+  left: -380px;
   user-select: none;
-  -webkit-user-select: none;
+  /*height: 100%;*/
+  z-index: 1;
+  /* overflow: hidden; */
 }
 
-
 @media screen and (max-width: 768px) { 
-
+  .main-hend {
+    display: none;
+    visibility: hidden;
+  }
   .main-title {
     margin-left: 55px;
     width: 35%;
@@ -115,20 +143,18 @@
   }
 
   .main-flex-content-title {
-    font-size: 2.8rem;
+    font-size: 3.4rem;
     margin-top: 20px;
   }
   .main-flex-content {
     text-align: center;
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
   }
   .main-title {
     text-align: center;
     width: 100%;
     margin-left: 0px;
-    /* margin-left: 55px; */
-    /* width: 35%; */
-    /* width: 100%; */
     font-size: 20.7198px;
   }
 
@@ -139,5 +165,67 @@
 
   .main-flex-content-btn {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main-flex-content-title {
+    font-size: 3rem;
+    margin-top: 20px;
+  }
+  .main-flex-content {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .main-title {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20.7198px;
+  }
+}
+
+/* Mac Book Laptops */
+@media screen and (max-height: 2234px) {
+  .main-title {
+    border-radius: 30.7072px;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .main-flex-content {
+    /*height: auto;*/
+    /*transform: scale(.9);*/
+  }
+  .main-flex-content-title {
+    width: 100%;
+    font-size: 4.4rem;
+    margin-top: 20px;
+  }
+  .main-flex-content-text {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+  }
+  .main-flex-content-btn {
+    margin: 10px 0;
+    width: 312.82px;
+    height: 66.08px;
+    background: #ff226d;
+    box-shadow: 0px 1.92598px 1.92598px rgba(0, 0, 0, 0.25);
+    border-radius: 7.70392px;
+    font-weight: 300;
+    font-size: 2.4rem;
+  }
+  .main-text-image__phone {
+    top: -154px;
+    left: 40px;
+    /*height: 100%;*/
+    z-index: 3;
+    overflow: hidden;
+    transform: scale(.7);
   }
 }

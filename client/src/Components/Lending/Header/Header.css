@@ -5,7 +5,8 @@
   height: 105px;
   align-items: center;
   z-index: 20;
-  background: #00B2FE;
+  background: var(--bgc);
+  /* background: #00B2FE; */
   /* background: rgb(30, 102, 133); */
   width: 100%;
   border-bottom: 1px solid white;
@@ -19,14 +20,6 @@
 .main-header-mobile {
   display: none;
 }
-/* .header__logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--white);
-  font-weight: 700;
-  font-size: 1.4em;
-} */
 .header__logo {
   height: 100%;
   
@@ -136,6 +129,7 @@
   align-items: center;
   border-right: 1px solid white ;
   padding: 15px;
+  justify-content: center;
 }
 
 .nav-btn-reg {
@@ -153,7 +147,6 @@
   background: #0066fe; */
   cursor: pointer;
 }
-
 
 .nav-drop {
   position: relative;
@@ -182,12 +175,10 @@
 .nav-down-select:hover {
   color: rgba(216, 216, 216, 0.868);
 
-
 }
 
 .active-burger-modal {
   left: 0 !important;
-
 }
 
 .burger-modal {
@@ -197,7 +188,7 @@
   z-index: 10;
   position: fixed;
   /* // width: 345px; */
-  height: 100vh;
+  height: 100%;
   transition: 0.6s all;
   /* width: 100vw; */
   background-color: rgba(0, 0, 0, 0.785);
@@ -205,20 +196,20 @@
 
 .burger-modal-wrapper {
   width: 100%;
+  /*height: 100%;*/
   text-align: center;
-  height: 100%;
-  padding-top: 140px;
+  padding-top: 40%;
   transition: 0.6s all;
 }
 
 .burger-modal-item {
   text-decoration: none;
-            width: 100%;
-            display: block;
-            padding: 15px 0 15px 0;
-            color: rgb(255, 255, 255);
-            cursor: pointer;
-            transition: background 0.4s;
+  width: 100%;
+  display: block;
+  padding: 15px 0 15px 0;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background 0.4s;
 }
 
 .burger-modal-item:hover {
@@ -236,14 +227,15 @@
 }
 
 .fa-bur svg {
-  
   width: 30px;
   height: 30px;
 }
 
 .burger-modal-block {
   text-align: center;
-  padding-top: 270px;
+  height: 100%;
+  align-items: center;
+  /*display: flex;*/
 }
 
 

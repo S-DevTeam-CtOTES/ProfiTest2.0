@@ -1,23 +1,35 @@
 import React from 'react';
-import python from '../../../../assets/icons/Python.svg'
+import { Link, NavLink, Route, Routes } from 'react-router-dom'
 import './CurceComponent.css'
+import { FavoriteCoursesData } from './FavoriteCoursesData';
 
 const CurceComponent = () => {
-    return (
-        <div className='CurceComponent-wrapper'>
-        
-            <div className='CurceComponent'>
-                <div className="CurceComponent-image">
-                    <img src={python} alt="python" />
-                </div>
-                <div className="CurceComponent-title">Python разработчик</div>
-                <div className="CurceComponent-text">В современном обществе существует проблема профориентации, команда проекта пытается её решить! Мы подготовили профориентационный тест, который поможет определиться с наиболее подходящей для вас профессией и помочьв её освоении.</div>
-                <button
-                className="CurceComponent-btn">Подробнее</button>
-            </div>
-                <div className="back"></div>    
-        </div>
-    );
+    return(
+        <>
+        {FavoriteCoursesData.map((item, i) => {
+                            return(
+                                <>
+                                <div className='CurceComponent-wrapper'>
+                                    <div className='CurceComponent'  key={item.id}>
+                                        <div className="CurceComponent-image">
+                                            <img src={item.img} alt={item.name} />
+                                        </div>
+                                        <div className="CurceComponent-title">{item.name}</div>
+                                        <div className="CurceComponent-text">{item.description}</div>
+                                        <div className="more-button">
+                                          <Link to={item.url}>
+                                            <button
+                                            className="CurceComponent-btn">Подробнее</button>
+                                          </Link>
+                                        </div>
+                                    </div>
+                                    <div className="back"></div>
+                                  </div> 
+                                </>
+                            )
+        })}
+        </>
+    )
 }
 
 export default CurceComponent;

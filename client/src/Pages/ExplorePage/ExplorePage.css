@@ -1,0 +1,29 @@
+.explorePage__wrapper {
+    color: #ffffff;
+    padding: 10% 20px 20px 20px;
+}
+
+.explorePage {
+}
+
+.explorePage__title {
+    text-align: center;
+    padding: 10px 0;
+}
+.explore__descr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.explorePage__content {
+}
+.exolore__table {
+    width: 100%;
+}
+.exolore__table img {
+    width: 100%;
+}
+.CopyrightExplore {
+    color: #ffffff;
+    text-align: center;
+}

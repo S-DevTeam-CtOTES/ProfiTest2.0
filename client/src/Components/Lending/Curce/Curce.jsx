@@ -13,9 +13,6 @@ const Curce = () => {
                 <h2 className="curce-title">Курсы</h2>
                 <div className="curce-block">
                 <CurceComponent/>
-                <CurceComponent/>
-                <CurceComponent/>
-                <CurceComponent/>
                 </div>
                 <Link to="/courses">
                     <button className='curce-btn'>Больше курсов</button>

@@ -9,8 +9,11 @@ const CoursesPage = () => {
   return (
     <>
     <Header />
-      <div className="courses__wrapper">
+      <div className="courses__wrapper courses-top">
         <div className="courses__container container flex">
+          <div className="courses__title">
+            <h1>Курсы</h1>
+          </div>
         {coursesData.map((item, i) => {
                             return(
                                 <>
