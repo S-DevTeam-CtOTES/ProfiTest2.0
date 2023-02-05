@@ -1,9 +1,16 @@
 .user__agreement {
-    padding: 6% 20px;
+    padding: 8% 20px;
     color: #373737;
     background: rgba(235, 226, 226, .6);
     user-select: none;
 }
 .user__agreement ul {
     padding: 0 20px;
+}
+
+/* 1350px */
+@media screen and (max-width: 1350px) {
+    h1 {
+        margin-top: 80px;
+    }
 }
