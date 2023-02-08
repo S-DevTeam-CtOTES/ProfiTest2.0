@@ -1,4 +1,4 @@
-import { QuastionData  } from '../../data';
+import { QuastionData  } from '../../data/data';
 
 export let map = [];   
 

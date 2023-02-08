@@ -2,9 +2,8 @@ import React, {Component, FC, useContext, useState} from 'react'
 import {Link, NavLink, Route, Routes} from 'react-router-dom'
 import {Context} from '../../..'
 import {FaBars, FaTimes} from "react-icons/fa";
-import Store from '../../../store/store'
-import SignUpForm from '../../SignUpForm/SignUpForm'
-import LoginForm from '../../SignUpForm/SignUpForm'
+import { TITLE } from '../../../varaibles/variables';
+
 import './Header.css'
 
 const Header = () => {
@@ -22,7 +21,7 @@ const Header = () => {
             <header className="header hmobile">
                 <nav className="navbar ">
                     <a href="/" className="nav-link-logo">
-                        PROFITEST
+                        {TITLE}
                         {/* <span className='color'>PROFI</span>TEST */}
                         {/* PROFI<span className='color'>TEST</span> */}
                     </a>

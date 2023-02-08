@@ -1,7 +1,6 @@
 import { Routes, Route, BrowserRouter, useNavigate } from 'react-router-dom'
 import { useContext, useEffect } from 'react'
 import { Context } from '../..'
-import { observe } from 'mobx'
 import { observer } from 'mobx-react-lite'
 import Quizze from '../Quizze/Quizze'
 import Lending from '../Lending/Lending'
@@ -14,6 +13,7 @@ import UserAgreement from '../Lending/UserAgreement'
 import Err404 from '../../Pages/404/Err404'
 import './App.css'
 import ExplorePage from "../../Pages/ExplorePage/ExplorePage";
+import CoursesComponent from '../SeparateCourse/SeparateCourse'
 
 const App = ()  => {
 
@@ -38,6 +38,8 @@ const App = ()  => {
             
             <Route path='/Room' element={<PersonRoom/>}/>
             <Route path='/courses' element={<CoursesPage />}/>
+              <Route path='/courses/:id' element={<CoursesComponent />}/>
+
             <Route path='/explore' element={<ExplorePage />}/>
             <Route path='/quizze' element={<Quizze/>}/>
             <Route path='/user-agreement' element={<UserAgreement />}/>
