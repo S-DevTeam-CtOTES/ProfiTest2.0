@@ -63,6 +63,21 @@
 }
 
 
+
+@media screen and (max-width: 1200px) {
+  .curce-block {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .curce-block {
+    flex-wrap: wrap;
+  }
+}
+
+
 @media screen and (max-width: 768px) { 
   .curce-block {
     flex-wrap: wrap;
@@ -70,3 +85,7 @@
   }
 
 }
+
+
+
+
