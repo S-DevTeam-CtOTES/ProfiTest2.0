@@ -1,6 +1,7 @@
 import React, {Component, FC, useContext, useState} from 'react'
 import {Link, NavLink, Route, Routes} from 'react-router-dom'
 import {Context} from '../../..'
+import {Variables} from '../../../../vars'
 import {FaBars, FaTimes} from "react-icons/fa";
 import Store from '../../../store/store'
 import SignUpForm from '../../SignUpForm/SignUpForm'
