@@ -1,5 +1,5 @@
 import React from 'react';
-import { QuastionData } from '../../../data'
+import { QuastionData } from '../../../data/data'
 import './QuastionNumber.css'
 
 

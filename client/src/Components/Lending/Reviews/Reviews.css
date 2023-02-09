@@ -24,6 +24,13 @@
 }
 
 
+@media screen and (max-width: 1024px) {
+
+  .reviews-wrapper {
+    gap: 30px;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
 

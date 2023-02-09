@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { React, useState } from 'react';
 import {Helmet} from 'react-helmet';
-import { QuastionData, Proffesion  } from '../../data';
+import { QuastionData, Proffesion  } from '../../data/data';
 import Button from '../../UI/Button';
 import Header from '../Lending/Header/Header';
 import { map } from './EmptyArray';

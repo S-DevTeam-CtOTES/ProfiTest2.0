@@ -140,6 +140,10 @@
     font-size: 21.7198px;
     font-weight: 500;
   }
+
+  .main-title {
+    width: 85%;
+  } 
 }
 
 
@@ -190,9 +194,22 @@
   }
   .main-title {
     text-align: center;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     font-size: 20.7198px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .main-wrapchik {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 860px) { 
+  .main-wrapchik {
+    margin-top: 70px;
   }
 }
 

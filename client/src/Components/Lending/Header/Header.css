@@ -264,6 +264,47 @@
 }
 
 
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    width: auto;
+  }
+  .nav-link {
+    padding: 0 15px 0 15px;
+  }
+  .main-wrapchik {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .header {
+    height: 70px;
+  }
+
+  .nav-link-logo {
+    line-height: 65px;
+    padding: 0px 9px 0 9px;
+    font-size: 2.1em;
+  }
+
+  .nav-link {
+    padding: 0 8px 0 8px;
+    line-height: 65px;
+  }
+
+  
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     width: 100%;

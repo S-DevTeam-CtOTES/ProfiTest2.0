@@ -4,6 +4,7 @@
 }
 .courses__container {
     padding: 20px 0;
+    justify-content: center;
 }
 .courses-top {
     margin-top: 80px;
@@ -56,6 +57,14 @@
     background: #FF226D;
     color: #ffffff;
 }
+
+@media screen and (max-width: 860px) { 
+
+    .courses-top {
+        margin-top: 0px;
+    }
+}
+
 @media screen and (max-width: 548px) {
     .flex {
         justify-content: center;
