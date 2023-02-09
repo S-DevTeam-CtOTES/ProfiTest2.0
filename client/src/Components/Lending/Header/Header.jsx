@@ -1,9 +1,8 @@
 import React, {Component, FC, useContext, useState} from 'react'
 import {Link, NavLink, Route, Routes} from 'react-router-dom'
 import {Context} from '../../..'
-import {Variables} from '../../../../vars'
 import {FaBars, FaTimes} from "react-icons/fa";
-import { TITLE } from '../../../varaibles/variables';
+import { TITLE, SNIPPET } from '../../../varaibles/variables';
 
 import './Header.css'
 
@@ -22,7 +21,7 @@ const Header = () => {
             <header className="header hmobile">
                 <nav className="navbar ">
                     <a href="/" className="nav-link-logo">
-                        {TITLE}
+                        {TITLE}<span className="snippet">{SNIPPET}</span>
                         {/* <span className='color'>PROFI</span>TEST */}
                         {/* PROFI<span className='color'>TEST</span> */}
                     </a>

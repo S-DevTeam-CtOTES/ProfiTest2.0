@@ -43,9 +43,13 @@
     height: 40px;
     align-items: center;
 }
+.footer__logo {
+    text-align: center;
+}
 .powered {
     font-size: 11px;
     text-transform: uppercase;
+    text-align: center;
 }
 .footer__logo hr {
     margin: 5px 0;
