@@ -2,7 +2,6 @@
   position: fixed;
   height: 105px;
   align-items: center;
-  z-index: 9999999999 !important;
   background: var(--bgc);
   width: 100%;
   border-bottom: 1px solid white;

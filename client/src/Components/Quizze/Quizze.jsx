@@ -100,14 +100,14 @@ const Quizze = () => {
   return (
     <>
     <Header />
-      <div className="quizzmain">
+      <div className="quizzmain toup">
 
   <Helmet>
       <style>{'body { background-color: #CCDDEE; }'}</style>
   </Helmet>
 
   <div className="quizzmain__container">
-    <div className="block__wrapper">
+    <div className="block__wrapper toup">
         <div className="block">
 
 

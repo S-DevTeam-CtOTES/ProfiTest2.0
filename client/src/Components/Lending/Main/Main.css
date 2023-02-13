@@ -79,7 +79,7 @@
   height: 100%;
   margin-left: 130px;
   user-select: none;
-  /* overflow: hidden; */
+  z-index: 1000000001 !important;
 }
 .main-text-image__phone {
   position: absolute;

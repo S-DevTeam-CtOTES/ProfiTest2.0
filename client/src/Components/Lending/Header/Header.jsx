@@ -17,15 +17,15 @@ const Header = () => {
     }
 
     return (
-        <div className="container">
-            <header className="header hmobile">
+        <div className="container toup">
+            <header className="header hmobile toup">
                 <nav className="navbar ">
-                    <a href="/" className="nav-link-logo">
+                    <a href="/" className="nav-link-logo toup">
                         {TITLE}<span className="snippet">{SNIPPET}</span>
                         {/* <span className='color'>PROFI</span>TEST */}
                         {/* PROFI<span className='color'>TEST</span> */}
                     </a>
-                    <div className="nav-menu">
+                    <div className="nav-menu toup">
                         {/* <a href="#about" className="nav-link">О нас</a> */}
                         <Link to="/quizze" className="nav-link">Тестирование</Link>
                         <Link to="/courses" className="nav-link">Курсы</Link>

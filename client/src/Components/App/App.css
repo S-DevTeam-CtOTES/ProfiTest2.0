@@ -79,6 +79,9 @@ body::-webkit-scrollbar {
 .toup {
   z-index: 9999999989 !important;
 }
+.XTranslate {
+  z-index: -1;
+}
 /* RESPONSIVE STYLES =========================================================================================================== */
 
 @media screen and (max-width: 1200px) {
