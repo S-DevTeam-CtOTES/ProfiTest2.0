@@ -82,6 +82,10 @@ body::-webkit-scrollbar {
 .XTranslate {
   z-index: -1;
   visibility: hidden;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: -100%;
 }
 /* RESPONSIVE STYLES =========================================================================================================== */
 
