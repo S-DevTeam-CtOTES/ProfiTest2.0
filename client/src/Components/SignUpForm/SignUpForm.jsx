@@ -1,11 +1,11 @@
 
 import { observer } from 'mobx-react-lite'
-import React, {FC, useContext, useState} from 'react'
+import React, {useContext, useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Context } from '../..'
 import clesed from '../../../src/assets/icons/Cross.svg'
-import Store from '../../store/store'
 import './SignUpForm.css'
+import {TITLE} from "../../varaibles/variables";
 
 
 
@@ -33,7 +33,7 @@ const SignUpForm = () => {
       
       <div className="modal-content-signup" onClick={e => e.stopPropagation()}>
       <Link to='/'><div className='clesed' onClick={() => setActive(false)}><img src={clesed} alt="clesed" /></div></Link>
-        <div className="modal-title">PROFITEST</div>
+        <div className="modal-title">{TITLE}</div>
         <div className="modal-hintname mt">Имя</div>
         <input 
         className='modal-name'

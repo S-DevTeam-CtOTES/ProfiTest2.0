@@ -1,10 +1,10 @@
 import { observer } from 'mobx-react-lite'
-import React, {FC, useContext, useState} from 'react'
+import React, {useContext, useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Context } from '../..'
 import clesed from '../../../src/assets/icons/Cross.svg'
-import Store from '../../store/store'
 import './LoginForm.css'
+import {TITLE} from "../../varaibles/variables";
 
 
 
@@ -31,7 +31,7 @@ const navigate = useNavigate();
       <div className="modal-content-login" onClick={e => e.stopPropagation()}>
         <Link to='/'><div className='clesed' onClick={() => setActive(false)}><img src={clesed} alt="clesed" /></div></Link>
 
-        <div className="modal-title">PROFITEST</div>
+        <div className="modal-title">{TITLE}</div>
 
         <div className="modal-hintemail-sign  mt">Email</div>
         <input 
