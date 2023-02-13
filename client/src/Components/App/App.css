@@ -37,7 +37,7 @@ a {
   z-index: 3000000000 !important;
 }
 button {
-  z-index: 3000000000 !important;
+  z-index: 1000000001 !important;
 }
 .no-select {
   user-select: none;

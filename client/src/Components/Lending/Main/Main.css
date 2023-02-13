@@ -30,10 +30,12 @@
   margin-left: 60px;
   display: flex;
   justify-content: space-between;
+  z-index: 1000000001 !important;
 }
 
 .main-flex-content {
   width: 640px;
+  z-index: 1000000001 !important;
 }
 
 .main-flex-content-title {
@@ -69,6 +71,7 @@
   color: #ffffff;
   cursor: pointer;
   transition: all .4 ease-in;
+  z-index: 1000000001 !important;
 }
 .main-flex-content-btn:hover {
   background: rgba(255, 34, 109, .8);
