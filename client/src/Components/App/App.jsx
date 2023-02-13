@@ -23,7 +23,7 @@ const App = ()  => {
     if (localStorage.getItem('token')) {
         store.checkAuth()
     }
-    console.log(store)
+    // console.log(store)
 
   }, [])
 
