@@ -3,7 +3,7 @@ import React from 'react';
 const Button = (props) => {
     return (
         <button 
-        className="toanswer"
+        className="toanswer toup"
         onClick={props.onClick}
         disabled={props.disabled}
         >

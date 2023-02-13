@@ -31,7 +31,7 @@ const SignUpForm = () => {
   return (
     <div className={active ? 'modal active__modal' : 'modal'} >
       
-      <div className="modal-content-signup" onClick={e => e.stopPropagation()}>
+      <div className="modal-content-signup toup" onClick={e => e.stopPropagation()}>
       <Link to='/'><div className='clesed' onClick={() => setActive(false)}><img src={clesed} alt="clesed" /></div></Link>
         <div className="modal-title">{TITLE}</div>
         <div className="modal-hintname mt">Имя</div>

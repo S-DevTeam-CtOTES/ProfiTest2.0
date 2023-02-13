@@ -29,13 +29,12 @@ const Main = () => {
                             <button className="main-flex-content-btn">Пройти тест</button>
                         </Link>
                     </div>
-                    <Link to="/quizze">
+
                         <div className="main-hend">
-                            <img className="main-text-image__phone" src={phone} alt="phone"/>
+                             <Link to="/quizze" className="toup"><img className="main-text-image__phone" src={phone} alt="phone"/></Link>
                             <img className="main-text-image__circle-arrows" src={circleArrows} alt="circle-arrows"/>
                             <img className="main-text-image__ellipse" src={ellipse} alt="ellipse-light"/>
                         </div>
-                    </Link>
                 </div>
             </div>
         </section>

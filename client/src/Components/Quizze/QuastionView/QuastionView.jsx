@@ -21,7 +21,7 @@ const QuastionView = ({ data,current, changeRadio, quastionIndex, checked, chang
                         onChange={changeRadio }
                         value={answerNumber}
                         // checked={current === i ? true : false}
-                        className="answer" name="answer" />
+                        className="answer toup" name="answer" />
                         <span className="block__answer">{answersText}</span>
                 </label>
             )

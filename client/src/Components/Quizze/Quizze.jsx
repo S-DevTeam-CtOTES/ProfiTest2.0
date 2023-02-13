@@ -123,7 +123,7 @@ const Quizze = () => {
         </>
         : <Result data={Proffesion}/> }
 
-        <div className="btns">
+        <div className="btns toup">
         
           { resultButton ? <Button
             onClick={refreshWindow}
