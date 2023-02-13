@@ -9,7 +9,9 @@
   border-radius: 7.60595px;
   z-index: 3;
 }
-
+.more-button, .more-button a {
+  z-index: 1000000001 !important;
+}
 .CurceComponent-image {
   padding-top: 33px;
   text-align: center;
@@ -55,6 +57,7 @@
   border-radius: 4.37088px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  z-index: 1000000001 !important;
 }
 .CurceComponent-btn:hover {
   background: #ff226d;
