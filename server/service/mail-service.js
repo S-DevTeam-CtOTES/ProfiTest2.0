@@ -21,18 +21,18 @@ class MailService {
         await this.transporter.sendMail({
             from: process.env.SMTP_USER,
             to,
-            subject: 'Активация аккаунта на PROFITEST', 
+            subject: 'PLATFORMA.EXE | Активация аккаунта', 
             text: '',
             html: 
                 `
                     <div>
-                        <h1>Вас приветствует команда PROFITEST</h1>
-                        <p>Вы зарегистрировались на платформе PROFITEST, нажмите на кнопку для активации аккаунта</p>
+                        <h1>Вас приветствует команда Платформы.exe</h1>
+                        <p>Вы зарегистрировались на Платформе, нажмите на кнопку для активации аккаунта</p>
                         <a href="${link}">
                             <button style="margin-top: 50px;margin-bottom: 90px;width: 250px;height: 60px;background: #FF226D;box-shadow: 0px 1.92598px 1.92598px rgba(0, 0, 0, 0.25); border-radius: 7.70392px;font-weight: 300; font-size: 20;line-height: 110%;letter-spacing: 0.035em;color: #FFFFFF;cursor: pointer;">Активировать аккаунт</button>
                         </a>
 
-                        <p>С уважением, команда PROFITEST</p>
+                        <p>С уважением, команда Платформы.exe</p>
                     </div>
                 `
         })

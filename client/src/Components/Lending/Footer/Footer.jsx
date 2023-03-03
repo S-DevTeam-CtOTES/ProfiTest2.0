@@ -8,6 +8,9 @@ import youtube from './socialMedia/yt.png'
 import { TITLE, SNIPPET } from '../../../varaibles/variables';
 
 const Footer = () => {
+    const tgLink = 'https://t.me/platformaexe',
+        vklink = 'https://vk.com/platformaexe',
+        ytLink = 'https://www.youtube.com/@profitest.education'
     return (
         <div className='footer'>
             <div className="footer__container " id='contacts'>
@@ -19,13 +22,13 @@ const Footer = () => {
                 <div className="footer__socials">
                     <h1>Контакты</h1>
                     <div className="footer__links">
-                        <a href="https://t.me/profitestnews" className="footer__links-item" target="_blank">
+                        <a href={tgLink} className="footer__links-item" target="_blank">
                             <img className='social-icon' src={telegram} alt="Telegram" />
                             &nbsp; Telegram</a>
-                        <a href="https://vk.com/profitestnews" className="footer__links-item" target="_blank">
+                        <a href={vklink} className="footer__links-item" target="_blank">
                         <img className='social-icon' src={vk} alt="VKontakte" />
                             &nbsp; VK</a>
-                        <a href="https://www.youtube.com/@profitest.education" className="footer__links-item" target="_blank">
+                        <a href={ytLink} className="footer__links-item" target="_blank">
                         <img className='social-icon' src={youtube} alt="Youtube" />
                             &nbsp; Youtube</a>
                     </div>
